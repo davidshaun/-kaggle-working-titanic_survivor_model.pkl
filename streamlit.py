@@ -20,7 +20,7 @@ deck = st.selectbox("Cabin Deck", model.dls.classes["Deck"])
 embarked = st.selectbox("Embarked", model.dls.classes["Embarked"])
 
 age = st.number_input("Age", min_value=0.0, max_value=100.0, value=25.0)
-fare = st.number_input("Fare", min_value=0.0, value=30)
+fare = st.number_input("Fare", min_value=0.0, value=30.0)
 
 SibSp = st.number_input("Siblings / Spouses Aboard", min_value=0.0, value=0.0)
 parch = st.number_input("Parents / Children Aboard", min_value=0.0, value=0.0)
