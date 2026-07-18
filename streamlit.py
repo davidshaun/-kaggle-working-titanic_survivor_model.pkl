@@ -44,6 +44,10 @@ input_data = pd.DataFrame([{
     "Embarked":embarked,
 }])
 
+st.write("Categorical columns:", model.dls.cat_names)
+st.write("Continuous columns:", model.dls.cont_names)
+st.write("Input columns:", input_data.columns.tolist())
+
 if st.button("Predict Survival"):
     pred_idx, confidence = predict_survivor(input_data)
     if pred_idx == 1:
