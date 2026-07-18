@@ -8,7 +8,7 @@ st.caption("Built With Streamlit")
 
 model = load_learner("titanic_survivor_model.pkl")
 
-def predict_survivor():
+def predict_survivor(df):
     _, pred_idx, probs = model.predict(df.iloc[0])
     confidence = probs[pred_idx]
     return pred_idx, confidence
