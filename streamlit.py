@@ -16,8 +16,8 @@ def predict_survivor():
 pclass = st.selectbox("Passenger Class", [1,2,3])
 sex = st.selectbox("Passenger Sex", ["male", "female"])
 title = st.selectbox("Passenger Title", model.dls.classes["Title"])
-deck = st.slectbox("Cabin Deck", model.dls.classes["Deck"])
-embarked = st.selctbox("Embarked", model.dls.classes["Embarked"])
+deck = st.selectbox("Cabin Deck", model.dls.classes["Deck"])
+embarked = st.selectbox("Embarked", model.dls.classes["Embarked"])
 
 age = st.number_input("Age", min_value=0.0, max_value=100.0, value=25.0)
 fare = st.number_input("Fare", min_value=0.0, value=30)
