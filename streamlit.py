@@ -2,7 +2,7 @@ from numpy.ma.core import default_fill_value
 
 import streamlit as st
 import pandas as pd
-from fastai.tabular.all import
+from fastai.tabular.all import *
 
 st.title("Titanic Survivorship Predictor")
 st.caption("Built With Streamlit")
