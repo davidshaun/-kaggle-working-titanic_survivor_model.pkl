@@ -35,13 +35,13 @@ else:
 input_data = pd.DataFrame([{
     "Pclass":pclass,
     "Sex":sex,
+    "Embarked":embarked,
     "Title":title,
-    "Age":age,
     "Age_na":age_na,
-    "Fare":fare,
+    "Age":age,
     "SibSp":SibSp,
     "Parch":parch,
-    "Embarked":embarked,
+    "Fare":fare,
 }])
 
 st.write("Categorical columns:", model.dls.cat_names)
