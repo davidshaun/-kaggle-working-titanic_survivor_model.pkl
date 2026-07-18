@@ -54,4 +54,4 @@ if st.button("Predict Survival"):
     if pred_idx == 1:
         st.success(f"Survived (confidence {confidence:.2f})")
     else:
-        st.error(f"Did Not Survive (confidence{confidence:.2f})")
+        st.error(f"Did Not Survive (confidence {confidence:.2f})")
