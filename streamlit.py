@@ -37,6 +37,7 @@ input_data = pd.DataFrame([{
     "Sex":sex,
     "Embarked":embarked,
     "Title":title,
+    "Deck":deck,
     "Age_na":age_na,
     "Age":age,
     "SibSp":SibSp,
