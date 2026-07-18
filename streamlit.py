@@ -52,6 +52,6 @@ input_data = pd.DataFrame([{
 if st.button("Predict Survival"):
     pred_idx, confidence = predict_survivor(input_data)
     if pred_idx == 1:
-        st.success(f"Survived (confidence{confidence:.2f})")
+        st.success(f"Survived (confidence {confidence:.2f})")
     else:
         st.error(f"Did Not Survive (confidence{confidence:.2f})")
